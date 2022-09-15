@@ -60,3 +60,5 @@ Then time has come to upload all the changes you made in your local files to the
 If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
 
 This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+
+//prueba de SINCRONIZACION
