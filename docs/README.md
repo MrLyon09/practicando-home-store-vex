@@ -61,4 +61,3 @@ If the process runs without any errors, the following message will be displayed:
 
 This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
 
-//prueba de SINCRONIZACION
