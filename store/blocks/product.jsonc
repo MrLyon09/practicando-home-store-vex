@@ -1,0 +1,10 @@
+{
+  "store.product": {
+    "children": [
+      "rich-text#Title",
+      "product-images",
+      "product-name"
+      
+    ]
+  }
+}

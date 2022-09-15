@@ -1,0 +1,266 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text#Title",
+      "rich-text#Description",
+      "list-context.image-list#home",
+      "info-card#pixel",
+      "info-card#iphone",
+      //"list-context.product-list",
+      "shelf#home",
+      "flex-layout.row#home",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile",
+      "modal-trigger#cupon"
+
+    ]
+  },
+
+  "rich-text#Title": { 
+    "props": { 
+      "text": " HOME STORE",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+      
+    }
+  },
+  "rich-text#Description": { 
+    "props": { 
+      "text": "LA TIENDA ONLINE CON MAS DESCUENTOS",
+      "textPosition": "CENTER",
+      "font":"t-heading-3" 
+    }
+  },
+  
+  "list-context.image-list#home":{
+    "children":[
+      "slider-layout#home-images"
+    ],
+    "props":{
+      "height":500,
+      "images":[
+        {
+          "image":"assets/banners/home.jpg",
+          "description":""
+        },
+        {
+          "image":"assets/banners/fuera.webp",
+          "description":""
+        },
+        {
+          "image":"assets/banners/Ofertas.jpg",
+          "description":""
+        },
+        {
+          "image":"assets/banners/Ofertas-1.jpeg",
+          "description":""
+        },
+        {
+          "image":"assets/banners/oferta.jpg",
+          "description":""
+        },
+        {
+          "image":"assets/banners/black.jpg",
+          "description":""
+        }
+        
+      ]
+    }
+  },
+  "slider-layout#home-images":{
+    "props":{
+      "itemsPerPage":{
+        "desktop":1,
+        "tablet":1,
+        "phone":1
+      },
+      "infinite":true,
+      "showPaginationDots":"never"
+    }
+
+  },
+
+  "info-card#pixel":{
+    "props":{
+      "id": "infoCardPixel",
+      "isFullModeStyle": false,
+      "textPosition":"left",
+      "imageUrl": "assets/pixel.jpg",
+      "headLine":"PRESENTAMOS EL PIXEL",
+      "subhead":"DESCUBRE lo que puedes hacer",
+      "callToActionText":"CONOCE MAS",
+      "callToActionUrl":"#",
+      "textAlignment":"left",
+      "blockClasss":"infoCardPixel"
+    }
+  },
+
+  "info-card#iphone":{
+    "props":{
+      "id": "infoCardIphone",
+      "isFullModeStyle": false,
+      "textPosition":"center",
+      "imageUrl": "assets/iphone.jpg",
+      "headLine":"PRESENTAMOS EL IPHONE 10",
+      "subhead":"DESCUBRE lo que puedes hacer",
+      "callToActionText":"CONOCE MAS SOBRE EL IPHONE NEW",
+      "callToActionUrl":"#",
+      "textAlignment":"center",
+      "blockClasss":"infoCardIphone"
+    }
+  },
+ "shelf#home":{
+ // "list-context.product-list":{
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props":{
+      "orderBy":"orderByTopSaleDESC",
+      "paginationDotsVisibilityDESC":"desktopOnly",
+      "product-list":{
+        "maxItems":5,
+        "itemsPerPage":4,
+        "minItemsPerPage":3,
+        "scroll":"BY_PAGE",
+        "arrows":true,
+        "titleText":"PRODUCTOS MAS VENDIDOS"
+      }
+    }
+
+  },
+  "flex-layout.row#home":{
+    "children":[
+      "info-card#col-left",
+      "flex-layout.col#col-right"
+    ]
+  },
+  "info-card#col-left":{
+    "props":{
+      "id": "info-cardMacBook",
+      "isFullModeStyle": true,
+      "textPosition":"left",
+      "imageUrl": "assets/mac.jpg",
+      "headLine":"PRESENTAMOS EL IMAC PTO",
+      "subhead":"DESCUBRE TODO LO QUE PUEDES HACER",
+      "callToActionText":"CONOCE MAS",
+      "callToActionUrl":"#",
+      "textAlignment":"left",
+      "blockClasss":"infoCardMacBook"
+    }
+
+  },
+  "flex-layout.col#col-right":{
+    "children":[
+      "info-card#col-right-1",
+      "info-card#col-right-2"
+    ]
+  },
+  "info-card#col-right-1":{
+    "props":{
+      "id": "infoCardStadia",
+      "isFullModeStyle": false,
+      "textPosition":"left",
+      "imageUrl": "assets/stadia.jpg",
+      "headLine":"PRESENTAMOS EL STADIA PRO",
+      "subhead":"DESCUBRE EL FUTURO DE LOS VIDEOJUEGOS",
+      "callToActionText":"CONOCE MAS",
+      "callToActionUrl":"#",
+      "callToActionMode":"button",
+      "textAlignment":"center",
+      "blockClasss":"infoCardStadia"
+    }
+
+  },  
+  "info-card#col-right-2":{
+    "props":{
+      "id": "infoCardGoogleHome",
+      "isFullModeStyle": false,
+      "textPosition":"left",
+      "imageUrl": "assets/googlehome.jpg",
+      "headLine":"PRESENTAMOS EL GOOGLE HOME",
+      "subhead":" MEJOR EN TU HOGAR",
+      "callToActionText":"CONOCE MAS",
+      "callToActionUrl":"#",
+      "callToActionMode":"button",
+      "textAlignment":"center",
+      "blockClasss":"infoCardGoogleHome"
+    }
+
+  },
+  "responsive-layout.mobile#mobile":{
+    "children":[
+      "rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  "responsive-layout.desktop#desktop":{
+    "children":[
+      "rich-text#desktop",
+      "image#desktop"
+    ]
+  },
+  "rich-text#desktop":{
+    "props":{
+      "text":"# Tu cafe, a manera \n ##### De aspecto similar a las cafeteras moka, sirve para preparar un café muy denso, sabroso, a través de un filtrado o goteo. No es un café espresso al uso. Cafetera de filtro (de goteo o percolador) (1961), consiste en un depósito de agua que se calienta y se hace pasar a través del café molido que está depositado sobre un filtro de papel o de malla de aluminio o acero  ",
+      "textPosition":"left",
+      "textAlignment":"left"
+    }
+  },
+  "rich-text#mobile":{
+    "props":{
+      "text":"### Tu chocolate, \n ### a  tu manera ",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER"
+    }
+  }, 
+  "image#desktop":{
+    "props":{
+      "src":"https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg",
+      "link":{
+        "url":"/small-appliances/coffe-makers"
+      },
+      "alt":"Coffe Makers Colletion",
+      "maxWidth":"100%"
+    }
+  },
+  "image#mobile":{
+    "props":{
+      "src":"https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg",
+      "link":{
+        "url":"/small-appliances/coffe-makers"
+      },
+      "alt":"Coffe Makers Colletion",
+      "maxWidth":"100%"
+    }
+  },
+  "modal-trigger#cupon":{
+    "children":[
+      "rich-text#cupon",
+      "modal-layout#cupon"
+    ]
+  },
+  "rich-text#cupon":{
+    "props":{
+      "text":"ver cupon",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "font":"t-heading-3",
+      "color":"c-on-emphasis"
+    }
+  },
+  "modal-layout#cupon":{
+    "children":[
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content":{
+    "props":{
+      "text":"DESCUENTO50%",
+      "font":"t-heading-4",
+      "color":"c-on-emphasis"
+    }
+  }
+
+}
+
