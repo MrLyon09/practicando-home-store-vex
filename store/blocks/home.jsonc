@@ -18,11 +18,10 @@
 
   "rich-text#Title": { 
     "props": { 
-      "text": " HOME STORE",
+      "text": " ICELAND",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
-      
+      "font": "t-heading-1"  
     }
   },
   "rich-text#Description": { 

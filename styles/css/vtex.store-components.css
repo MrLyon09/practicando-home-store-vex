@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=DynaPuff&family=Josefin+Sans&display=swap');
+
 .infoCardContainer{
     background-color: rgb(6, 6, 6);
     
 }
 .sliderFrame{
     background-color: rgb(9, 130, 243);
+}
+.imageElement{
+    width: auto;
+}
+
+.infoCardImage{
+    display: flex;
+    width: 350px;
+}
+.infoCardSubhead{
+    color:beige;
+    font-size: larger;
+    font-family:'Bungee Spice', cursive;
 }
