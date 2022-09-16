@@ -21,14 +21,17 @@
       "text": " ICELAND",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"  
-    }
+      "font": "t-heading-1", 
+      "blockClass":["Title", "Cabecera"]
+    } 
+    
   },
   "rich-text#Description": { 
     "props": { 
-      "text": "LA TIENDA ONLINE CON MAS DESCUENTOS",
+      "text": "LA TIENDA ONLINE CON LOS MAYORES DESCUENTOS",
       "textPosition": "CENTER",
-      "font":"t-heading-3" 
+      "font":"t-heading-3",
+      "blockClass":"Description"
     }
   },
   
